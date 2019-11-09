@@ -14,3 +14,5 @@ delete:function(condition){
     return orm.delete('burgers',condition)
 }
 };
+//  export link
+module.exports= burger;
