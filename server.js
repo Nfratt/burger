@@ -10,9 +10,9 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Set up routes 
-const routes = require('./controllers/burgerController.js');
-
+const routes = require('./controllers/burgers_Controller.js');
 app.use(routes);
+
 // use handelbars
 const exphbs = require('express-handlebars');
 
