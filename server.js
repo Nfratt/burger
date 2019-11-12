@@ -23,6 +23,6 @@ app.set('view engine', 'handlebars');
 app.listen(PORT, function() {
     console.log(`SERVER LISTENING ON: http://localhost:${PORT}`);
     console.log('----------------------------');
-    require('./config/conne1ction').create();
+    require('./config/connection').create();
   });
   
