@@ -1,0 +1,21 @@
+<h1>Cats!</h1>
+
+<h2>Burgers that have not been eaten</h2>
+
+<ul>
+  {{#each buger}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Cats that are sleepy!</h2>
+
+<ul>
+  {{#each cats}}
+    {{#if sleepy}}
+      {{> cats/cat-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ul>
