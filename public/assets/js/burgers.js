@@ -42,7 +42,7 @@ $(function () {
         };
 
         // Send the POST request.
-        $.ajax('/api/cats', {
+        $.ajax('/api/burgers', {
             type: 'POST',
             data: newBurger,
         }).then(

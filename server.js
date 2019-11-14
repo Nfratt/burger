@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Set up routes 
-const routes = require('./controllers/burgers_Controller.js');
+const routes = require('./controllers/burgers_controller');
 app.use(routes);
 
 // use handelbars
@@ -25,5 +25,5 @@ app.listen(PORT, function() {
     console.log('----------------------------');
     require('./config/connection').create();
   });
-  
+
   
