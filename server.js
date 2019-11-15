@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express= require('express');
-
+const orm= require('./config/orm')
 const PORT= process.env.PORT|| 3000;
 const app = express();
 // telling it to use express and look in our public folder 
@@ -12,6 +12,11 @@ app.use(express.json());
 // Set up routes 
 const routes = require('./controllers/burgers_controller');
 app.use(routes);
+
+app.get('/', async function(req, res) {
+  const burgers = await orm.all("burgers")
+  res.render('index',{burgers})
+});
 
 // use handelbars
 const exphbs = require('express-handlebars');
