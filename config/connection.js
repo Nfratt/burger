@@ -5,6 +5,7 @@ const mysql = require('promise-mysql');
 module.exports = {
   create: async function () {
     try {
+      console.log(process.env.NODE_ENV === 'production',process.env.JAWSDB_URL);
       this.connection = await mysql.createConnection(process.env.NODE_ENV === 'production' ? process.env.JAWSDB_URL : require('./db-config'));
       console.log('DATABASE CONNECTION ESTABLISHED');
       console.table(this.connection.config);
