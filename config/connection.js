@@ -1,6 +1,6 @@
 // add mySQL
 const mysql = require('promise-mysql');
-const dbconfig=require('db-config.js')
+const dbconfig=require('./db-config.js')
 
 // ORM's Export connection 
 module.exports = {
