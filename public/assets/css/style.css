@@ -17,4 +17,20 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
+  h1{align-content: center;}
   
+  body{
+    background:url(../Images/scuffedstatic_dark_1920x1234.jpg);
+    color: white;
+  }
+.eaten{margin-right: 25%;
+  float: right;
+
+}
+.uneaten{float: left;
+
+}
+.addaburg{
+clear: both;
+}
+
